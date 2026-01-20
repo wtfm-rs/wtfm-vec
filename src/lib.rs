@@ -8,7 +8,7 @@
 //! These functions can also be tested by other crates in integration tests:
 //! ```sh
 //! cargo new --lib --name test-wtfm-vec /tmp/test-wtfm-vec
-//! cd /tmp/test-wtfm-vec && cargo add --git https://github.com/wtfm-rs/wtfm-rs.github.io wtfm-vec && cd -
+//! cd /tmp/test-wtfm-vec && cargo add --git https://github.com/wtfm-rs/wtfm-vec wtfm-vec && cd -
 //! mkdir /tmp/test-wtfm-vec/tests
 //! cat > /tmp/test-wtfm-vec/tests/it-works <<EOF
 //! #[test]
@@ -20,33 +20,28 @@
 //! cd /tmp/test-wtfm-vec && cargo test --tests && cd -
 //! rm -rf /tmp/test-wtfm-vec
 //! ```
-//! Local test on my mac (`~/github/wtfm-rs/wtfm-rs.github.io`)
+//! Local test on my mac (`~/github/wtfm-rs/wtfm-vec`)
 //!
 //! ```sh
 //!    Creating library `test-wtfm-vec` package
 //! note: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-//!    Updating git repository `https://github.com/wtfm-rs/wtfm-rs.github.io`
+//!    Updating git repository `https://github.com/wtfm-rs/wtfm-vec`
 //!      Adding wtfm-vec (git) to dependencies
-//!    Updating git repository `https://github.com/wtfm-rs/wtfm-rs.github.io`
+//!    Updating git repository `https://github.com/wtfm-rs/wtfm-vec`
 //!     Locking 1 package to latest Rust 1.92.0 compatible version
-//! ~/github/wtfm-rs/wtfm-rs.github.io
-//!    Compiling wtfm-vec v0.1.0 (https://github.com/wtfm-rs/wtfm-rs.github.io#f3f80f0d)
-//!    Compiling test-wtfm-vec v0.1.0 (/private/tmp/test-wtfm-vec)
-//!     Finished `test` profile [unoptimized + debuginfo] target(s) in 0.27s
-//!      Running unittests src/lib.rs (target/debug/deps/test_wtfm_vec-16e22ab8a53d193d)
+//! ~/github/wtfm-rs/wtfm-vec
+//!   Compiling wtfm-vec v0.1.0 (https://github.com/wtfm-rs/wtfm-vec#64ea951f)
+//!   Compiling test-wtfm-vec v0.1.0 (/private/tmp/test-wtfm-vec)
+//!    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.30s
+//!     Running unittests src/lib.rs (target/debug/deps/test_wtfm_vec-fb34a6b75e4c6c9b)
 //!
 //! running 1 test
 //! test tests::it_works ... ok
 //!
 //! test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 //!
-//! ~/github/wtfm-rs/wtfm-rs.github.io
+//! ~/github/wtfm-rs/wtfm-vec
 //! ```
-//!
-//! GitHub Actions:
-//!
-//! <https://github.com/wtfm-rs/wtfm-rs-test/actions>
-//!
 
 /// ```
 /// pub fn vec_push_pop() {
